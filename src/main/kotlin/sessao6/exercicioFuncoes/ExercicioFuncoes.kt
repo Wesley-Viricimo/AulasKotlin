@@ -6,7 +6,7 @@ fun main() {
     println("Cubo: ${cubo(3)}")
 }
 
-fun converteAnos(anos: Int) : Unit{
+fun converteAnos(anos: Int) : Unit {
     println("$anos anos equivalem a:")
     println("${anos * 12} meses")
     println("${anos * 365} dias")
