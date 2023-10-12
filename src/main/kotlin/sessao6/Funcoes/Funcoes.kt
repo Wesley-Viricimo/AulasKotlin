@@ -7,7 +7,7 @@ fun main() {
 }
 
 fun soma(a: Int, b: Int) : Int {
-    return a + b;
+    return a + b
 }
 
 fun mult(a: Int, b: Int) : Int = (a * b) //Função utilizando linha única
