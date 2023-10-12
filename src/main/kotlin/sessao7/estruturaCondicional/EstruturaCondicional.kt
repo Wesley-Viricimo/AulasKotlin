@@ -1,4 +1,4 @@
-package sessao6.estruturaCondicional
+package sessao7.estruturaCondicional
 
 fun main() {
     maiorIdade(15)
