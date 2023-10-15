@@ -26,4 +26,9 @@ fun main() {
     pessoa.acordar()
     pessoa.doc
 
+    with(pessoa) {  //Indicando o objeto que será utilizado
+        acordar()
+        dormir()
+    }
+
 }
