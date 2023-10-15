@@ -1,4 +1,4 @@
-package sessao13
+package sessao13.init
 
 class Animal(var especie: String) {
 

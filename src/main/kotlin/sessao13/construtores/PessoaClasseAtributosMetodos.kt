@@ -1,4 +1,4 @@
-package sessao13
+package sessao13.construtores
 
 class PessoaClassesAtributosMetodos(var anoNascimento: Int, var nome: String) { //Precisa ser declarado o var para o atributo ser acessado fora da classe
     var doc: String? = null
