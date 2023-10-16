@@ -1,7 +1,10 @@
 package sessao14.heranca
 
-open class Eletronico(var marca: String) { //Para que outras classes possam herdar desta é necessário indicar que é uma classe aberta
-    fun ligar() {}
+open class Eletronico(private var marca: String) { //Para que outras classes possam herdar desta é necessário indicar que é uma classe aberta
+   private fun ativarCorrente(){}//Método não será enxergue fora da classe
+    fun ligar() {
+        ativarCorrente()
+    }
     fun desligar() {}
 }
 
@@ -14,4 +17,6 @@ fun main() {
 
     c.ligar()
     c.desligar()
+    //c.ativarCorrente()
+    //c.marca
 }
