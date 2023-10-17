@@ -11,6 +11,8 @@ fun main() {
 
     println("Primeira receita: ${data.first()}") //Pega primeiro item da lista
     println("Ultima receita: ${data.last()}") //Pega ultimo item da lista
+
+    println("Receita: ${data.filter { it.nome == "Lasanha" }}") //Busca na lista algum elemento onde o nome seja igual a lasanha
 }
 
 fun gerarDados(): List<Receita> {
