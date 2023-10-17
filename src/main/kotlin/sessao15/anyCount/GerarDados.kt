@@ -8,6 +8,9 @@ fun main() {
 
     println("Tenho dados? ${if(data.any()) "Sim" else "Não"}")
     println("Tenho  ${data.count()} elementos")
+
+    println("Primeira receita: ${data.first()}") //Pega primeiro item da lista
+    println("Ultima receita: ${data.last()}") //Pega ultimo item da lista
 }
 
 fun gerarDados(): List<Receita> {
