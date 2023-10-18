@@ -5,6 +5,8 @@ fun main() {
 
     data.forEach { println(it.nome) } //Percorrendo todos os itens da lista e exibindo o nome das receitas
 
+    data.map { it.nome } //Mapeia a lista retornando somente os nomes
+
     //data.any() -> Retorna true se a coleção tiver ao menos um elemento
     //data.count() -> Retorna a quantidade de elementos na coleção
 
