@@ -13,6 +13,9 @@ fun main() {
     println("Ultima receita: ${data.last()}") //Pega ultimo item da lista
 
     println("Receita: ${data.filter { it.nome == "Lasanha" }}") //Busca na lista algum elemento onde o nome seja igual a lasanha
+
+    data.take(2) //Pega os 2 primeiros itens da lista
+    data.takeLast(2) //Pega os 2 ultimos itens da lista
 }
 
 fun gerarDados(): List<Receita> {
