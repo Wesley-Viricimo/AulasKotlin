@@ -1,8 +1,11 @@
 package sessao16.control
 
+import sessao16.business.ConviteBusiness
 import sessao16.control.Console
 
 class Portaria {
+
+    private val conviteBusiness = ConviteBusiness()
 
     init {
         println("Portaria inicializada.")
@@ -16,7 +19,14 @@ class Portaria {
          }
 
          val tipoConvite = Console.readString("Qual é o tipo de convite?" )
-         println(tipoConvite)
+         if (!conviteBusiness.tipoValido(tipoConvite)) {
+             return "Negado, Convite inválido!"
+         }
+
+         val codigoConvite = Console.readString("Qual é o código do convite?" )
+         if (!conviteBusiness.codigoValido(codigoConvite, tipoConvite)) {
+             return "Negado, Convite inválido!"
+         }
 
          return "TODO!"
     }
