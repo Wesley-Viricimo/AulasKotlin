@@ -2,6 +2,7 @@ package sessao16.control
 
 import sessao16.business.ConviteBusiness
 import sessao16.control.Console
+import sessao16.entity.Convite
 
 class Portaria {
 
@@ -12,7 +13,7 @@ class Portaria {
         controle()
         println(controle())
     }
-     private fun controle() : String {
+    fun controle() : String {
         val idade = Console.readInt("Qual a sua idade?")
          if (idade < 18) {
              return "Negado, Menores de idade não são permitidos!"
@@ -24,10 +25,11 @@ class Portaria {
          }
 
          val codigoConvite = Console.readString("Qual é o código do convite?" )
-         if (!conviteBusiness.codigoValido(codigoConvite, tipoConvite)) {
+         val convite = Convite(tipoConvite, codigoConvite)
+         if (!conviteBusiness.codigoValido(convite)) {
              return "Negado, Convite inválido!"
          }
 
-         return "TODO!"
+         return "Bem vindo!"
     }
 }
